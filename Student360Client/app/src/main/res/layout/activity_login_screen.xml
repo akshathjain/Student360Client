@@ -3,24 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/backgroundColor"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
+    android:gravity="center"
     tools:context="com.akshathjain.student360client.LoginScreen">
 
     <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="-50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent">
 
         <EditText
-            android:id="@+id/user_name_entry"
+            android:id="@+id/username_entry"
             style="@style/Widget.Design.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorAccent"
-            android:hint="User Name"
+            android:hint="@string/username_entry_hint"
             android:textColor="@android:color/white" />
     </android.support.design.widget.TextInputLayout>
 
@@ -35,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorAccent"
-            android:hint="Password"
+            android:hint="@string/password_entry_hint"
             android:inputType="textPassword"
             android:textColor="@android:color/white"
             android:textColorHint="@color/colorAccent" />

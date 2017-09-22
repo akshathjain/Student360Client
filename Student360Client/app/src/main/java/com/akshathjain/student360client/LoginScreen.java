@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class LoginScreen extends AppCompatActivity {
-    private EditText userNameEntry;
+    private EditText usernameEntry;
     private EditText passwordEntry;
     String userName;
     String password;
@@ -16,12 +16,12 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
-        userNameEntry = (EditText) findViewById(R.id.user_name_entry);
+        usernameEntry = (EditText) findViewById(R.id.username_entry);
         passwordEntry = (EditText) findViewById(R.id.password_entry);
     }
 
     public void login(View v) {
-        userName = userNameEntry.getText().toString();
+        userName = usernameEntry.getText().toString();
         password = passwordEntry.getText().toString();
     }
 }

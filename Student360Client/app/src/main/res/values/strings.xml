@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Student360Client</string>
+    <string name="username_entry_hint">Username</string>
+    <string name="password_entry_hint">Password</string>
 </resources>
