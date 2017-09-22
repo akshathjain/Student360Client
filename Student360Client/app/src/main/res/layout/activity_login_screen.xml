@@ -3,48 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="com.akshathjain.student360client.LoginScreen"
-    android:background="@color/backgroundColor">
+    tools:context="com.akshathjain.student360client.LoginScreen">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@android:color/white">
+        android:textColorHint="@color/colorAccent">
 
         <EditText
-            style="@style/Widget.Design.TextInputLayout"
             android:id="@+id/user_name_entry"
+            style="@style/Widget.Design.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
             android:hint="User Name"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@android:color/white">
+        android:textColorHint="@color/colorAccent">
 
         <EditText
-            style="@style/Widget.Design.TextInputLayout"
             android:id="@+id/password_entry"
+            style="@style/Widget.Design.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
             android:hint="Password"
             android:inputType="textPassword"
             android:textColor="@android:color/white"
-            android:textColorHint="@color/colorAccent"/>
+            android:textColorHint="@color/colorAccent" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_gravity="left"
-        android:onClick="login"/>
+        android:onClick="login"
+        android:text="Login"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
