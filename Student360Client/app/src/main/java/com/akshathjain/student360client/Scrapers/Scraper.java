@@ -7,4 +7,5 @@ Purpose: abstract Scraper class for webscraping
  */
 
 public abstract class Scraper {
+
 }

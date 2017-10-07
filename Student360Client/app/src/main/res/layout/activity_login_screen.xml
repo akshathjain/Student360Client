@@ -52,4 +52,10 @@
         android:text="Login"
         android:layout_marginTop="10dp"/>
 
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </WebView>
 </LinearLayout>
